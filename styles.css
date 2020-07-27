@@ -1,0 +1,30 @@
+body {
+  background: #efdec1;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+}
+
+.container p {
+  font-size: 35px;
+  margin-top: 40px;
+}
+
+#choices {
+    padding: 0;
+}
+
+#choices li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 35px;
+  cursor: pointer;
+  padding: 20px 0;
+}
+
+#btn {
+  font-size: 35px;
+  border: solid 5px tomato;
+  width :100px;
+  margin: 0 auto;
+}
+
