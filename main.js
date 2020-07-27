@@ -12,8 +12,6 @@
 
   let currentNum = 0;
 
-  question.textContent = quizSet[currentNum].q;
-
   //回答をシャッフルする関数()　フィッシャー・イェーツ
   function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -24,11 +22,16 @@
     return arr;
   }
 
-  //選択肢の表示
-  const shuffleChoices = shuffule(...[quizSet[currentNum].c]);
-  quizSet[currentNum].c.forEach((choice) => {
-    const li = document.createElement("li");
-    li.textContent = choice;
-    choices.appendChild(li);
-  });
+  
+  function sedQuiz() {
+    question.textContent = quizSet[currentNum].q;
+
+    //選択肢の表示
+    const shuffleChoices = shuffule([...quizSet[currentNum].c]);
+    shuffleChoices.forEach((choice) => {
+      const li = document.createElement("li");
+      li.textContent = choice;
+      choices.appendChild(li);
+    });
+  }
 }
