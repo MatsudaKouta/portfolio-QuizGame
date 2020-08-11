@@ -4,9 +4,20 @@ body {
   text-align: center;
 }
 
+.container {
+  position: relative;
+}
+
 .container p {
   font-size: 35px;
   margin-top: 40px;
+}
+
+.container img {
+  position: absolute;
+  top: 206px;
+  left: 39%;
+  margin: 0 auto;
 }
 
 #choices {
@@ -19,7 +30,11 @@ body {
   font-size: 35px;
   cursor: pointer;
   padding: 20px 0;
+  background-color: chartreuse; 
+  border: solid 5px black;
 }
+
+
 
 #choices li.correct {
   background: #d4edda;
@@ -36,8 +51,32 @@ body {
 }
 
 #btn {
-  font-size: 35px;
-  border: solid 5px tomato;
-  width: 100px;
+  background: #3498db;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 0 #2880b9;
+}
+
+#result {
+  position: relative;
+  top: -330px;
+  background-color: azure;
+  height: 123px;
+  width: 390px;
   margin: 0 auto;
+  background-color: coral;
+}
+
+#result > a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  border: solid, 5px,black;
+}
+
+.hidden {
+  transform: translateY(-800px);
 }

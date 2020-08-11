@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>quizGame</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <section class=container>
-        <p>TVドラマクイズ</p>
-        <p id = question></p>
-        <ul id = choices>
-        </ul>
-        <img id='img' src="" alt="">
-        <div id="btn">Next</div>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <p>TVドラマクイズ</p>
+      <p id="question"></p>
+      <ul id="choices"></ul>
+      <img id="img" src="" alt="" />
+      <div id="btn">Next</div>
+      
+      <section id="result" class="hidden">
+          <p></p>
+          <a href="">もう一度？</a>
+        </section>
     </section>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
